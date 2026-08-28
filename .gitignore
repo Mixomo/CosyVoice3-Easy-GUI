@@ -1,0 +1,86 @@
+# CosyVoice3 Easy GUI — local/runtime files
+# Keep source code, documentation, configuration templates and tests publishable.
+
+# Python caches and build metadata
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Local environments and IDEs
+.venv/
+.venv-*/
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.vs/
+*.code-workspace
+compile_commands.json
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+*.swp
+*.swo
+*.swn
+*.swm
+*.bak
+*.tmp
+*.temp
+.ipynb_checkpoints/
+
+# Application runtime, caches and downloaded dependencies
+.runtime/
+.cache/
+cache/
+tensorboard/
+logs/
+exp/
+data/
+raw_wav/
+accelerator_wheels/
+*.part
+
+# Downloaded model weights and generated training/inference artifacts
+models/
+outputs/
+voices/
+training/datasets/
+training/outputs/
+training/projects/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+*.engine
+*.plan
+*.tar
+*.tar.gz
+*.wav
+!assets/chime.wav
+*.mp3
+*.m4a
+*.aac
+*.flac
+*.ogg
+
+# Local UI state
+config/ui_settings.json
+config/last_dialogue.json
+
+# Generated protobuf/grpc code
+*_pb2.py
+*_pb2_grpc.py

@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "onnxruntime"
+version = "1.26.0"
+description = "Metadata-only compatibility shim that routes Faster-Whisper to onnxruntime-gpu."
+requires-python = "==3.11.*"
+dependencies = ["onnxruntime-gpu==1.26.0"]
+
+[tool.setuptools]
+packages = []

@@ -1,0 +1,36 @@
+{
+  "schema": 2,
+  "platform": "Windows x86_64 / NVIDIA CUDA",
+  "python": "3.11.15",
+  "uv": "0.11.33",
+  "cuda_runtime": "12.8",
+  "cudnn_major": 9,
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "torchaudio": "2.8.0+cu128",
+    "onnxruntime-gpu": "1.26.0",
+    "ctranslate2": "4.8.1",
+    "faster-whisper": "1.2.1",
+    "triton-windows": "3.4.0.post21",
+    "flash-attn": "2.8.3+cu128torch2.8.0cxx11abiFALSE",
+    "tensorrt-cu12": "10.13.3.9",
+    "tensorrt-cu12-bindings": "10.13.3.9",
+    "tensorrt-cu12-libs": "10.13.3.9",
+    "onnx": "1.16.0"
+  },
+  "torch_index": "https://download.pytorch.org/whl/cu128",
+  "flash_attention_wheel": "https://github.com/kingbri1/flash-attention/releases/download/v2.8.3/flash_attn-2.8.3+cu128torch2.8.0cxx11abiFALSE-cp311-cp311-win_amd64.whl",
+  "global_cuda_toolkit_required": false,
+  "dll_policy": "Preload project-local PyTorch CUDA/cuDNN DLLs before ONNX Runtime, CTranslate2 and TensorRT; clear CUDA_PATH/CUDA_HOME only inside project BAT processes.",
+  "lock_profile": 3,
+  "lock_cutoff": "2026-08-23T19:00:00Z",
+  "lock_policy": "clean-windows-only-regeneration-on-contract-change",
+  "onnxruntime_dependency_policy": "A metadata-only local onnxruntime 1.26.0 shim satisfies Faster-Whisper and depends on onnxruntime-gpu 1.26.0, preventing CPU/GPU module collisions.",
+  "uv_version": "0.11.33",
+  "supported_environments": [
+    "sys_platform == 'win32' and platform_machine == 'AMD64'"
+  ],
+  "required_environments": [
+    "sys_platform == 'win32' and platform_machine == 'AMD64'"
+  ]
+}

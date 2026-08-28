@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/FunAudioLLM/CosyVoice.git",
+  "commit": "074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc",
+  "matcha_tts_commit": "dd9105b34bf2be2230f4aa1e4769fb586a3c824e",
+  "model": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+  "model_directory": "models/Fun-CosyVoice3-0.5B-2512"
+}

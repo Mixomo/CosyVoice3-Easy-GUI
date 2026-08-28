@@ -1,0 +1,23 @@
+# CosyVoice3 Easy GUI - canonical Windows CUDA 12.8 runtime
+# The core below is owned by pyproject.toml + uv.lock and installed by:
+#   uv sync --frozen
+#
+# PyTorch wheels resolve from https://download.pytorch.org/whl/cu128 via [tool.uv.sources].
+
+python==3.11.15
+torch==2.8.0+cu128
+torchaudio==2.8.0+cu128
+onnxruntime-gpu==1.26.0
+ctranslate2==4.8.1
+faster-whisper==1.2.1
+triton-windows==3.4.0.post21
+onnx==1.16.0
+
+# Metadata-only local dependency shim (not a CPU runtime):
+# onnxruntime==1.26.0 -> vendor/onnxruntime-gpu-shim -> onnxruntime-gpu==1.26.0
+
+# Exact post-sync exceptions handled by 1- install.bat:
+flash-attn==2.8.3+cu128torch2.8.0cxx11abiFALSE
+tensorrt-cu12==10.13.3.9
+tensorrt-cu12-bindings==10.13.3.9
+tensorrt-cu12-libs==10.13.3.9
